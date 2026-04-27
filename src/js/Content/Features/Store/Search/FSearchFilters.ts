@@ -6,6 +6,7 @@ import HTML from "@Core/Html/Html";
 import {L} from "@Core/Localization/Localization";
 import CartSearchFilter from "@Content/Features/Store/Search/Filters/CartSearchFilter";
 import EarlyAccessSearchFilter from "@Content/Features/Store/Search/Filters/EarlyAccessSearchFilter";
+import PositiveSearchFilter from "@Content/Features/Store/Search/Filters/PositiveSearchFilter";
 import MixedSearchFilter from "@Content/Features/Store/Search/Filters/MixedSearchFilter";
 import NegativeSearchFilter from "@Content/Features/Store/Search/Filters/NegativeSearchFilter";
 import ReviewsScoreSearchFilter from "@Content/Features/Store/Search/Filters/ReviewsScoreSearchFilter";
@@ -28,6 +29,7 @@ export default class FSearchFilters extends Feature<CSearch> {
         this._filters = [
             CartSearchFilter,
             EarlyAccessSearchFilter,
+            PositiveSearchFilter,
             MixedSearchFilter,
             NegativeSearchFilter,
             ReviewsScoreSearchFilter,
